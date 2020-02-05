@@ -46,6 +46,8 @@ setopt hist_expire_dups_first # 古い履歴を削除する必要がある場合
 setopt hist_expand # 補完時にヒストリを自動的に展開する
 setopt inc_append_history # 履歴をインクリメンタルに追加
 
+export PATH="/usr/local/bin:$PATH"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # --------------
 # propmt
@@ -82,4 +84,3 @@ gbd() {
         git branch -D $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 zle -N gbd
-export PATH="/usr/local/bin:$PATH"
