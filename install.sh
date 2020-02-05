@@ -1,6 +1,8 @@
+#!/bin/sh
 ln -sf ~/dotfiles/.profile ~/.profile
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+
 
 if [ "$(uname)" == 'Darwin' ]; then
     ln -sf ~/dotfiles/.Brewfile ~/.Brewfile
@@ -9,3 +11,7 @@ else
     exit 1
 fi
 
+chmod +x ~/dotfiles/install.sh
+chmod +x ~/dotfiles/install-mac.sh
+
+./install-mac.sh

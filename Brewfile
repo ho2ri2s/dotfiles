@@ -1,3 +1,5 @@
+cask_args appdir: "/Applications"
+
 brew "git"
 brew "vim"
 brew "zsh"
@@ -14,3 +16,5 @@ cask "slack"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "notion"
+cask "1password"
+
