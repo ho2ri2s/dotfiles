@@ -3,6 +3,7 @@ ln -sf ~/dotfiles/.profile ~/.profile
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 
+ln -sf ~/dotfiles/.config/starship.toml
 
 if [ "$(uname)" == 'Darwin' ]; then
     ln -sf ~/dotfiles/.Brewfile ~/.Brewfile
