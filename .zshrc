@@ -6,6 +6,7 @@ source ${HOME}/.profile
 
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'zsh-users/zsh-autosuggestions'
+zplug 'zsh-users/zsh-completions'
 zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:fzf
 zplug 'mollifier/anyframe'
 zplug 'wfxr/forgit'
@@ -49,38 +50,9 @@ setopt inc_append_history # 履歴をインクリメンタルに追加
 export PATH="/usr/local/bin:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+
 # --------------
 # propmt
 # --------------
 eval "$(starship init zsh)"
 
-# cd in history
-ff() {
-    local res=$(z | sort -rn | cut -c 12- | fzf)
-    if [ -n "$res" ]; then
-        BUFFER+="cd $res"
-        zle accept-line
-    else
-        return 1
-    fi
-}
-zle -N ff
-bindkey '^x^f' ff
-
-# ff git branch
-gc() {
-    local branches branch
-    branches=$(git --no-pager branch -vv) &&
-        branch=$(echo "$branches" | fzf +m) &&
-        git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-}
-zle -N gc
-
-# checkout git branch
-gbd() {
-    local branches branch
-    branches=$(git --no-pager branch -vv) &&
-        branch=$(echo "$branches" | fzf +m) &&
-        git branch -D $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
-}
-zle -N gbd
