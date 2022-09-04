@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/cask-versions"
 
 brew "git"
 brew "vim"
@@ -10,8 +11,8 @@ brew "zsh"
 brew "peco"
 brew "lazygit"
 brew "starship"
-# Apple Slicon対応のJDK11
-brew "zulu11"
+brew "zulu11" # Apple Slicon対応のJDK11
+brew "php" #alfred Github workflow
 
 cask "google-chrome"
 cask "slack"
@@ -21,4 +22,5 @@ cask "alfred"
 cask "zoom"
 cask "visual-studio-code"
 cask "dropbox"
+cask "figma"
 
