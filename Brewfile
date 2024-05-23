@@ -11,7 +11,7 @@ brew "zsh"
 brew "peco"
 brew "lazygit"
 brew "starship"
-brew "zulu11" # Apple Slicon対応のJDK11
+brew "zulu17" # Apple Slicon対応のJDK17
 brew "php" #alfred Github workflow
 
 cask "google-chrome"
@@ -23,4 +23,5 @@ cask "zoom"
 cask "visual-studio-code"
 cask "dropbox"
 cask "figma"
+cask "background-music"
 

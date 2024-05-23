@@ -1396,7 +1396,7 @@
 				<real>0.023000000044703484</real>
 			</dict>
 			<key>Mouse Reporting</key>
-			<true/>
+			<false/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -1525,6 +1525,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SoundForEsc</key>

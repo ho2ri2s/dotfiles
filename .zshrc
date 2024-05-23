@@ -50,7 +50,6 @@ setopt inc_append_history # 履歴をインクリメンタルに追加
 export PATH="/usr/local/bin:$PATH"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-
 # --------------
 # propmt
 # --------------
