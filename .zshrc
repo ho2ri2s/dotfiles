@@ -1,8 +1,26 @@
+# --------------
+# Homebrew Setup (Apple Silicon)
+# --------------
+if [[ $(uname -m) == "arm64" ]]; then
+    # Apple Silicon (M1/M2/M3/M4)
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    # Intel Mac
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+# --------------
+# Load Profile
+# --------------
+source ${HOME}/.profile
+
+# --------------
+# zplug Setup
+# --------------
 if [ ! -e "${HOME}/.zplug/init.zsh" ]; then
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
 fi
 source ${HOME}/.zplug/init.zsh
-source ${HOME}/.profile
 
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'zsh-users/zsh-autosuggestions'
@@ -47,11 +65,8 @@ setopt hist_expire_dups_first # 古い履歴を削除する必要がある場合
 setopt hist_expand # 補完時にヒストリを自動的に展開する
 setopt inc_append_history # 履歴をインクリメンタルに追加
 
-export PATH="/usr/local/bin:$PATH"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
 # --------------
-# propmt
+# Prompt
 # --------------
 eval "$(starship init zsh)"
 

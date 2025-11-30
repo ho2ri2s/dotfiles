@@ -1,27 +1,53 @@
 cask_args appdir: "/Applications"
 
+# Taps
+tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "homebrew/cask-versions"
 
-brew "git"
-brew "vim"
+# Shell & Terminal
 brew "zsh"
-brew "peco"
-brew "lazygit"
-brew "starship"
-brew "zulu17" # Apple Slicon対応のJDK17
-brew "php" #alfred Github workflow
+brew "starship"  # Modern prompt
 
-cask "google-chrome"
-cask "slack"
-cask "iterm2"
-cask "notion"
+# Version Control
+brew "git"
+brew "gh"        # GitHub CLI
+brew "lazygit"   # Terminal UI for git
+
+# Text Editors
+brew "vim"
+
+# Development Tools
+brew "tree"      # Directory tree viewer
+brew "peco"      # Interactive filtering
+brew "wget"      # File downloader
+brew "cloc"      # Code line counter
+brew "plantuml"  # UML diagram generator
+
+# Language Version Managers
+brew "goenv"     # Go version manager
+brew "rbenv"     # Ruby version manager
+brew "ruby-build"
+
+# Programming Languages & Runtimes
+brew "go"
+brew "ruby"
+brew "openjdk"
+brew "openjdk@17"
+
+# Mobile Development
+brew "cocoapods" # iOS dependency manager
+
+# Applications
 cask "alfred"
-cask "zoom"
-cask "visual-studio-code"
+cask "background-music"
+cask "claude-code"
 cask "dropbox"
 cask "figma"
-cask "background-music"
-
+cask "google-chrome"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "notion"
+cask "slack"
+cask "visual-studio-code"
+cask "zoom"
