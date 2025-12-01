@@ -34,7 +34,16 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.profile ~/.profile
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
+mkdir -p ~/.config
 ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
+```
+
+Claude Codeの設定:
+```bash
+# Claude Codeの設定をコピー
+mkdir -p ~/.claude
+cp ~/dotfiles/.claude/settings.json ~/.claude/
+cp ~/dotfiles/.claude/settings.local.json ~/.claude/
 ```
 
 iTerm2の設定:
@@ -42,6 +51,13 @@ iTerm2の設定:
 # iTerm2の設定を読み込む（iTerm2 > Preferences > General > Preferences）
 # "Load preferences from a custom folder or URL" にチェックを入れて
 # ~/dotfiles/iterm2 を指定
+```
+
+Alfredの設定:
+```bash
+# Alfredの設定は既にDropboxで同期中
+# Alfred > Preferences > Advanced > Syncing
+# Sync folder: ~/Dropbox/Alfread を設定
 ```
 
 ### 5. シェルの再起動
@@ -133,17 +149,20 @@ git clone https://github.com/flutter/flutter.git ~/flutter
 
 ```
 dotfiles/
+├── .claude/
+│   ├── settings.json           # Claude Code フック設定
+│   └── settings.local.json     # Claude Code 権限設定
 ├── .config/
-│   └── starship.toml      # Starship プロンプト設定（実体）
+│   └── starship.toml           # Starship プロンプト設定（実体）
 ├── iterm2/
 │   └── com.googlecode.iterm2.plist  # iTerm2設定
-├── .gitconfig             # Git設定
-├── .profile               # 開発環境のPATH設定
-├── .vimrc                 # Vim設定
-├── .zshrc                 # Zsh設定
-├── Brewfile               # Homebrewパッケージリスト
-├── starship.toml          # Starship設定へのシンボリックリンク
-└── README.md              # このファイル
+├── .gitconfig                  # Git設定
+├── .profile                    # 開発環境のPATH設定
+├── .vimrc                      # Vim設定
+├── .zshrc                      # Zsh設定
+├── Brewfile                    # Homebrewパッケージリスト
+├── starship.toml               # Starship設定へのシンボリックリンク
+└── README.md                   # このファイル
 ```
 
 ## Apple Silicon (M4) 対応について
