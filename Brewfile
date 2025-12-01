@@ -1,10 +1,5 @@
 cask_args appdir: "/Applications"
 
-# Taps
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-
 # Shell & Terminal
 brew "zsh"
 brew "starship"  # Modern prompt
@@ -40,7 +35,6 @@ brew "cocoapods" # iOS dependency manager
 
 # Applications
 cask "alfred"
-cask "background-music"
 cask "claude-code"
 cask "dropbox"
 cask "figma"
