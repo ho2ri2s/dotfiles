@@ -30,6 +30,7 @@ brew "go"
 brew "ruby"
 brew "openjdk"
 brew "openjdk@17"
+brew "uv"
 
 # Mobile Development
 brew "cocoapods" # iOS dependency manager
