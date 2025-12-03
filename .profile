@@ -1,8 +1,9 @@
 # --------------
-# Java (OpenJDK 17)
+# Java (OpenJDK)
 # --------------
-export JAVA_HOME=$(/usr/libexec/java_home -v "17")
-export PATH=$PATH:${JAVA_HOME}/bin
+JAVA_VERSION="17"
+export JAVA_HOME="/opt/homebrew/opt/openjdk@${JAVA_VERSION}"
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # --------------
 # Android Development

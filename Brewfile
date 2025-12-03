@@ -18,6 +18,7 @@ brew "peco"      # Interactive filtering
 brew "wget"      # File downloader
 brew "cloc"      # Code line counter
 brew "plantuml"  # UML diagram generator
+brew "fzf"       # zplug
 
 # Language Version Managers
 brew "goenv"     # Go version manager

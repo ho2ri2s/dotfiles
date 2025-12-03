@@ -25,7 +25,6 @@ source ${HOME}/.zplug/init.zsh
 zplug 'zsh-users/zsh-syntax-highlighting'
 zplug 'zsh-users/zsh-autosuggestions'
 zplug 'zsh-users/zsh-completions'
-zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:fzf
 zplug 'mollifier/anyframe'
 zplug 'wfxr/forgit'
 zplug "rupa/z", use:z.sh
@@ -70,3 +69,7 @@ setopt inc_append_history # 履歴をインクリメンタルに追加
 # --------------
 eval "$(starship init zsh)"
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
