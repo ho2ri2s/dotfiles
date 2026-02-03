@@ -13,6 +13,8 @@ echo "Creating symlinks..."
 ln -sf "$DOTFILES_DIR/.profile" "$HOME/.profile"
 ln -sf "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 ln -sf "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+ln -sf "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
+ln -sf "$DOTFILES_DIR/.ideavimrc" "$HOME/.ideavimrc"
 ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
 
 # Copy iTerm2 preferences (macOS only)
