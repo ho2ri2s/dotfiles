@@ -73,3 +73,12 @@ eval "$(starship init zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ho2ri2s/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ho2ri2s/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ho2ri2s/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ho2ri2s/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Added by Antigravity
+export PATH="/Users/ho2ri2s/.antigravity/antigravity/bin:$PATH"
