@@ -18,11 +18,14 @@ if [[ -d "$HOME/Library/Android/sdk" ]]; then
 fi
 
 # --------------
-# Flutter
+# Flutter (fvm)
 # --------------
-# Flutterディレクトリが存在する場合のみPATHに追加
-if [[ -d "$HOME/flutter" ]]; then
-    export PATH=$PATH:$HOME/flutter/bin
+# fvmコマンドが存在する場合
+if command -v fvm &> /dev/null; then
+    # fvmのグローバル設定を追加
+    if [[ -d "$HOME/fvm/default/bin" ]]; then
+        export PATH="$HOME/fvm/default/bin:$PATH"
+    fi
 fi
 
 # --------------
