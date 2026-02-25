@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__serena",
+      "WebSearch",
+      "Bash(./gradlew clean:*)",
+      "Bash(git push:*)",
+      "Bash(gh pr create:*)",
+      "Bash(mkdir:*)",
+      "Bash(touch:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(npm config:*)",
+      "Bash(npm install:*)",
+      "Bash(npm list:*)",
+      "Bash(dart run build_runner build:*)",
+      "Bash(flutter pub:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(flutter test:*)",
+      "Bash(flutter build:*)",
+      "Bash(dart format:*)",
+      "Bash(dart fix:*)"
+    ],
+    "deny": [
+      "Bash(sudo:*)",
+      "Bash(rm -rf:*)",
+      "Read(**/*token*)",
+      "Read(**/*key*)"
+    ],
+    "ask": [],
+    "defaultMode": "plan"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "cat | bash ~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true
+  },
+  "extraKnownMarketplaces": {
+    "everything-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/everything-claude-code"
+      }
+    }
+  }
+}

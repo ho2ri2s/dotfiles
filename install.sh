@@ -69,6 +69,18 @@ setup_android_studio() {
 }
 
 # ===================
+# Claude Code setup function
+# ===================
+setup_claude_code() {
+    echo "Setting up Claude Code..."
+    mkdir -p "$HOME/.claude"
+
+    # Create symlinks for settings
+    ln -sf "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
+    ln -sf "$DOTFILES_DIR/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md"
+}
+
+# ===================
 # Node.js/npm setup function
 # ===================
 setup_node() {
@@ -139,6 +151,9 @@ if [ "$(uname)" = 'Darwin' ]; then
 
     # Android Studio setup
     setup_android_studio
+
+    # Claude Code setup
+    setup_claude_code
 
     # Node.js/npm setup
     setup_node

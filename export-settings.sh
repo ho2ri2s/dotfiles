@@ -59,6 +59,28 @@ if [ -n "$AS_DIR" ] && [ -d "$AS_DIR/keymaps" ]; then
 fi
 
 # ===================
+# Claude Code
+# ===================
+CLAUDE_DIR="$HOME/.claude"
+
+if [ -d "$CLAUDE_DIR" ]; then
+    echo "Exporting Claude Code settings..."
+    mkdir -p "$DOTFILES_DIR/claude"
+
+    # Export settings.json (only if it's not a symlink)
+    if [ -f "$CLAUDE_DIR/settings.json" ] && [ ! -L "$CLAUDE_DIR/settings.json" ]; then
+        cp "$CLAUDE_DIR/settings.json" "$DOTFILES_DIR/claude/"
+        echo "  - settings.json exported"
+    fi
+
+    # Export CLAUDE.md (only if it's not a symlink)
+    if [ -f "$CLAUDE_DIR/CLAUDE.md" ] && [ ! -L "$CLAUDE_DIR/CLAUDE.md" ]; then
+        cp "$CLAUDE_DIR/CLAUDE.md" "$DOTFILES_DIR/claude/"
+        echo "  - CLAUDE.md exported"
+    fi
+fi
+
+# ===================
 # npm global packages
 # ===================
 if command -v npm >/dev/null 2>&1; then

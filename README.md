@@ -53,6 +53,10 @@ exec zsh
 - カスタムキーマップのコピー
 - プラグインは手動インストール
 
+### Claude Code
+- `settings.json` → `~/.claude/settings.json`
+- `CLAUDE.md` → `~/.claude/CLAUDE.md`
+
 ### Node.js/npm
 - `.npmrc` → `~/.npmrc`
 - Node.js LTS の自動インストール（nvm経由）
@@ -67,8 +71,11 @@ exec zsh
 ```
 dotfiles/
 ├── .claude/
-│   ├── settings.json           # Claude Code フック設定
-│   └── settings.local.json     # Claude Code 権限設定
+│   ├── settings.json           # Claude Code フック設定（プロジェクトレベル）
+│   └── settings.local.json     # Claude Code 権限設定（プロジェクトレベル）
+├── claude/                     # Claude Code グローバル設定
+│   ├── settings.json           # メイン設定（権限・プラグイン等）
+│   └── CLAUDE.md               # グローバル指示
 ├── .config/
 │   └── starship.toml           # Starship プロンプト設定
 ├── iterm2/
