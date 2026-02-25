@@ -31,6 +31,7 @@ brew "ruby"
 brew "openjdk"
 brew "openjdk@17"
 brew "uv"
+brew "nvm"       # Node.js version manager
 
 # Mobile Development
 brew "cocoapods" # iOS dependency manager
@@ -38,6 +39,7 @@ brew "cocoapods" # iOS dependency manager
 # Applications
 cask "alfred"
 cask "claude-code"
+cask "docker-desktop"
 cask "dropbox"
 cask "figma"
 cask "google-chrome"
