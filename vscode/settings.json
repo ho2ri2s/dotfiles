@@ -1,0 +1,32 @@
+{
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.hlsearch": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "git.autofetch": true,
+    "http.systemCertificatesNode": true,
+    "geminicodeassist.project": "reverberant-cat-qv00q",
+    "geminicodeassist.inlineSuggestions.enableAuto": true,
+    "claudeCode.preferredLocation": "panel",
+    "editor.formatOnSave": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "explorer.autoReveal": true
+}

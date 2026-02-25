@@ -1,0 +1,4 @@
+# Global npm packages
+# Install with: npm install -g <package>
+corepack
+mmcp

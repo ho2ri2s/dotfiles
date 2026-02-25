@@ -1,0 +1,5 @@
+# Android Studio Plugins
+# Install manually via: Preferences > Plugins > Marketplace
+Dart
+flutter-intellij
+IdeaVIM

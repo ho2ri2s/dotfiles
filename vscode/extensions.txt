@@ -1,0 +1,14 @@
+# VSCode Extensions
+# Install with: code --install-extension <extension-id>
+anaer.vscode-version-lens
+anthropic.claude-code
+bierner.markdown-mermaid
+dart-code.dart-code
+dart-code.flutter
+github.copilot-chat
+github.vscode-pull-request-github
+google.geminicodeassist
+gruntfuggly.todo-tree
+ms-vscode.makefile-tools
+shd101wyy.markdown-preview-enhanced
+vscodevim.vim
