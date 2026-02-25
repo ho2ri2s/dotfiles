@@ -144,7 +144,7 @@ if [ "$(uname)" = 'Darwin' ]; then
 
     # Brewfile symlink
     echo "Creating Brewfile symlink..."
-    ln -sf "$DOTFILES_DIR/Brewfile" "$HOME/Brewfile"
+    ln -sf "$DOTFILES_DIR/Brewfile" "$HOME/.Brewfile"
 
     # VSCode setup
     setup_vscode
