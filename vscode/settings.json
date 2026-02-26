@@ -13,6 +13,7 @@
     "vim.hlsearch": true,
     "github.copilot.nextEditSuggestions.enabled": true,
     "git.autofetch": true,
+    "git.blame.editorDecoration.enabled": true,
     "http.systemCertificatesNode": true,
     "geminicodeassist.project": "reverberant-cat-qv00q",
     "geminicodeassist.inlineSuggestions.enableAuto": true,
@@ -29,5 +30,9 @@
         "editor.wordBasedSuggestions": "off"
     },
     "dart.flutterSdkPath": ".fvm/flutter_sdk", // 不要だったら消す
-    "explorer.autoReveal": true
+    "explorer.autoReveal": true,
+    "dart.devToolsLocation": {
+        "default": "beside",
+        "inspector": "sidebar"
+    }
 }
