@@ -28,5 +28,6 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": "off"
     },
+    "dart.flutterSdkPath": ".fvm/flutter_sdk", // 不要だったら消す
     "explorer.autoReveal": true
 }
