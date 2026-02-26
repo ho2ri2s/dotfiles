@@ -134,6 +134,10 @@ ln -sf "$DOTFILES_DIR/.config/starship.toml" "$HOME/.config/starship.toml"
 # macOS specific setup
 # ===================
 if [ "$(uname)" = 'Darwin' ]; then
+    # macOS defaults
+    echo "Setting macOS defaults..."
+    defaults write -g ApplePressAndHoldEnabled -bool false
+
     # iTerm2 preferences
     echo "Copying iTerm2 preferences..."
     if [ -f "$DOTFILES_DIR/iterm2/com.googlecode.iterm2.plist" ]; then
