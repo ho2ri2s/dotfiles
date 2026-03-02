@@ -40,7 +40,8 @@ brew "cocoapods" # iOS dependency manager
 cask "alfred"
 cask "claude-code"
 cask "docker-desktop"
-cask "dropbox"
+cask "meetingbar"
+
 cask "figma"
 cask "google-chrome"
 cask "iterm2"
